@@ -9,7 +9,7 @@ export const StyledDiv = styled.div`
     color: black; 
     padding: 4px; 
     border: 2px solid orange;
-    background: yellow; 
+    background: ${({ isFinish }) => isFinish ? "#0f90e9" : "#ffcb12"}; 
     width: 95%;
 `
 

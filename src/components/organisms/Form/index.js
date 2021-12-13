@@ -11,7 +11,7 @@ const Form = (props) => {
     const [errCreatedAt, setErrCreatedAt] = useState(false);
     const [validate, setValidate] = useState({})
     const [todo, setTodo] = useState({
-        id: props.data?.length + 1,
+        id: Math.floor(Math.random() * 10000),
         title: "",
         description: "",
         createdAt: "",

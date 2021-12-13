@@ -92,6 +92,8 @@ const PopUp = (props) => {
     setValidate(validationInput(todo));
   }
 
+  console.log(props.sendData)
+
 
   return (
     <div>

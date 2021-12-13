@@ -7,7 +7,6 @@ import { StyledUl, StyledDiv, StyledIcon } from "./style"
 const TodoList = (props) => {
 
     return (
-
         <StyledUl>
             {props.data?.filter(value => value.status === props.isFinish).sort(function (a, b) {
                 // Sort Data
@@ -16,7 +15,7 @@ const TodoList = (props) => {
             }).map((value, index) => {
                 return (
                     <div key={index} style={{ padding: 5 }}>
-                        <StyledDiv>
+                        <StyledDiv isFinish={props.isFinish}>
                             <li style={{ color: "#f22f2f2", textDecoration: props.isFinish ? "line-through #f0f0f0" : '' }}>{value.title}</li>
                             <div>
                                 <AiFillInfoCircle
